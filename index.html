@@ -1,4 +1,4 @@
-<html lang="en">
+     <html lang="en">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -9,18 +9,18 @@
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <script>
-   // Simple login logic with hardcoded Felix
+   // Simple login logic with hardcoded username and password "Felix"
    function login(event) {
     event.preventDefault();
-    const username = document.getElementById("Felix").value.trim();
-    const password = document.getElementById("Felix").value.trim();
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
     const errorMsg = document.getElementById("errorMsg");
 
     // Hardcoded credentials
     const validUser = "Felix";
     const validPass = "Felix";
 
-    if (Felix === validUser && Felix === validPass) {
+    if (username === validUser && password === validPass) {
       // Hide login, show payment page
       document.getElementById("loginPage").classList.add("hidden");
       document.getElementById("paymentPage").classList.remove("hidden");
@@ -35,12 +35,14 @@
     if (method === "Dana") {
       content = `<p class="mb-2 font-semibold">Bayar via Dana</p>
                  <p class="mb-2">Nomor Payment: <strong>0812-3456-7890</strong></p>
+                
     } else if (method === "GoPay") {
       content = `<p class="mb-2 font-semibold">Bayar via GoPay</p>
                  <p class="mb-2">Nomor Payment: <strong>0813-9876-5432</strong></p>
+                 
     } else if (method === "QRIS") {
-      content = `<p class="mb-2 font-semibold">Bayar via QRIS</p>
-                 <img src="https://placehold.co/150x150/png?text=QRIS+QR+Code" alt="QR code for QRIS payment" class="mx-auto rounded-md mb-2" />`;
+      content = `<p class="mb-2 font-semibold">Bayar via   </p>
+             <img src="https://placehold.co/150x150/png?text=QRIS+QR+Code" alt="QR code for QRIS payment" class="mx-auto rounded-md mb-2" />`;
     }
     document.getElementById("paymentDetails").innerHTML = content;
     document.getElementById("paymentModal").classList.remove("hidden");
@@ -54,7 +56,7 @@
   <!-- Login Page -->
   <div id="loginPage" class="bg-white rounded-xl shadow-lg max-w-md w-full p-6 flex flex-col items-center">
    <h1 class="font-semibold text-center text-gray-900 text-lg mb-4">
-    Login to Felix Payment
+    Login to Klzstore Payment
    </h1>
    <form class="w-full" onsubmit="login(event)">
     <div class="mb-4">
@@ -79,7 +81,7 @@
   <!-- Payment Page -->
   <div id="paymentPage" class="hidden bg-white rounded-xl shadow-lg max-w-md w-full p-6 flex flex-col items-center">
    <h1 class="font-semibold text-center text-gray-900 text-lg">
-    Payment Felix
+    Payment Klzstore
    </h1>
    <p class="text-center text-xs text-gray-500 mt-1 mb-4">
     Pilih Metode Pembayaran
@@ -124,7 +126,7 @@
     </a>
    </div>
    <div class="bg-[#f2f4f8] rounded-full w-full text-center py-2 text-[9px] text-gray-600">
-    © 2025 Felix. All rights reserved.
+    © 2025 Klzstore. All rights reserved.
    </div>
   </div>
 
@@ -139,4 +141,4 @@
    </div>
   </div>
  </body>
-</html>
+     </html>
