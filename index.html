@@ -1,4 +1,4 @@
-     <html lang="en">
+<html lang="en">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -34,15 +34,13 @@
     let content = "";
     if (method === "Dana") {
       content = `<p class="mb-2 font-semibold">Bayar via Dana</p>
-                 <p class="mb-2">Nomor Payment: <strong>0812-3456-7890</strong></p>
-                
+                 <p class="mb-2">Nomor Payment: <strong>0812-3456-7890</strong></p>`;
     } else if (method === "GoPay") {
       content = `<p class="mb-2 font-semibold">Bayar via GoPay</p>
-                 <p class="mb-2">Nomor Payment: <strong>0813-9876-5432</strong></p>
-                 
+                 <p class="mb-2">Nomor Payment: <strong>0813-9876-5432</strong></p>`;
     } else if (method === "QRIS") {
-      content = `<p class="mb-2 font-semibold">Bayar via   </p>
-             <img src="https://placehold.co/150x150/png?text=QRIS+QR+Code" alt="QR code for QRIS payment" class="mx-auto rounded-md mb-2" />`;
+      content = `<p class="mb-2 font-semibold">Bayar via QRIS</p>
+                 <img src="https://placehold.co/150x150/png?text=QRIS+QR+Code" alt="QR code for QRIS payment" class="mx-auto rounded-md mb-2" />`;
     }
     document.getElementById("paymentDetails").innerHTML = content;
     document.getElementById("paymentModal").classList.remove("hidden");
@@ -56,7 +54,7 @@
   <!-- Login Page -->
   <div id="loginPage" class="bg-white rounded-xl shadow-lg max-w-md w-full p-6 flex flex-col items-center">
    <h1 class="font-semibold text-center text-gray-900 text-lg mb-4">
-    Login to Klzstore Payment
+    Login to Felix Payment
    </h1>
    <form class="w-full" onsubmit="login(event)">
     <div class="mb-4">
@@ -81,7 +79,7 @@
   <!-- Payment Page -->
   <div id="paymentPage" class="hidden bg-white rounded-xl shadow-lg max-w-md w-full p-6 flex flex-col items-center">
    <h1 class="font-semibold text-center text-gray-900 text-lg">
-    Payment Klzstore
+    Payment Felix
    </h1>
    <p class="text-center text-xs text-gray-500 mt-1 mb-4">
     Pilih Metode Pembayaran
@@ -99,13 +97,13 @@
    </div>
    <div class="grid grid-cols-2 gap-4 w-full mb-6">
     <div class="bg-white rounded-lg shadow-sm flex flex-col items-center p-3">
-     <img alt="Blue glowing code icon with text Klzbotz on dark background" class="rounded-md mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/b0c21b82-7a62-4c0e-b28e-f357121c6e14.jpg" width="150"/>
+     <img alt="Blue glowing code icon with text Felixbotz on dark background" class="rounded-md mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/b0c21b82-7a62-4c0e-b28e-f357121c6e14.jpg" width="150"/>
      <span class="font-semibold text-sm text-gray-900">
       Rp 100.000
      </span>
     </div>
     <div class="bg-white rounded-lg shadow-sm flex flex-col items-center p-3">
-     <img alt="Blue glowing code icon with text Klzbotz on dark background" class="rounded-md mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/b0c21b82-7a62-4c0e-b28e-f357121c6e14.jpg" width="150"/>
+     <img alt="Blue glowing code icon with text Felixbotz on dark background" class="rounded-md mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/b0c21b82-7a62-4c0e-b28e-f357121c6e14.jpg" width="150"/>
      <span class="font-semibold text-sm text-gray-900">
       Rp 150.000
      </span>
@@ -126,7 +124,7 @@
     </a>
    </div>
    <div class="bg-[#f2f4f8] rounded-full w-full text-center py-2 text-[9px] text-gray-600">
-    © 2025 Klzstore. All rights reserved.
+    © 2025 Felix. All rights reserved.
    </div>
   </div>
 
@@ -141,4 +139,4 @@
    </div>
   </div>
  </body>
-     </html>
+</html>
